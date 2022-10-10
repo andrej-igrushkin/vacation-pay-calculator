@@ -1,0 +1,15 @@
+<!DOCTYPE HTML>
+<html xmlns:th="https://www.thymeleaf.org">
+<head> 
+    <title>Рассчет отпускной выплаты</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+	<h1>Рассчет отпускной выплаты</h1>
+    <form action="#" th:action="@{/calculator}" th:object="${employee}" method="post">
+    	<p>Средняя зарплата: <input type="number"  step="0.01" th:field="*{averageSalary}" /></p>
+        <p>Количество дней: <input type="text" th:field="*{numDay}" /></p>
+        <p><input type="submit" value="Submit" /> <input type="reset" value="Reset" /></p>
+    </form>
+</body>
+</html>

@@ -1,0 +1,14 @@
+<!DOCTYPE HTML>
+<html xmlns:th="https://www.thymeleaf.org">
+<head> 
+    <title>Рассчет отпускной выплаты</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+	<h1>Рассчет отпускной выплаты</h1>
+    <p th:text="'Средняя зарплата: ' + ${employee.averageSalary}" />
+    <p th:text="'Количество дней: ' + ${employee.numDay}" />
+    <p th:text="'Размер отпускной выплаты: ' + ${employee.vacationPayAmount}" />
+    <a href="/calculator">Submit another message</a>
+</body>
+</html>
